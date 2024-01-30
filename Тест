@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Lessons</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            width: 90%;
+            margin: 80px auto 20px;
+            overflow: hidden;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 5px;
+            background-color: #0056b3;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #004080;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        .course {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .course:hover {
+            transform: translateY(-5px);
+        }
+        .course img {
+            float: left;
+            margin-right: 20px;
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .course:hover img {
+            transform: scale(1.1);
+        }
+        .course h3 {
+            margin-top: 0;
+            font-size: 1.4em;
+            transition: color 0.3s ease-in-out;
+        }
+        .course:hover h3 {
+            color: #007bff;
+        }
+        .course p {
+            margin-top: 10px;
+            color: #666;
+            font-size: 1.1em;
+        }
+        .course button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .course button:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 0;
+            }
+            .container {
+                margin-top: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Online Lessons</h1>
+            <nav>
+                <a href="https://avatars.mds.yandex.net/get-images-cbir/3588382/YjmzgMuDHP94XmcrSpw0UA8813/ocr">Home</a>
+                <a href="https://avatars.mds.yandex.net/get-images-cbir/3588382/YjmzgMuDHP94XmcrSpw0UA8813/ocr">Courses</a>
+                <a href="https://avatars.mds.yandex.net/get-images-cbir/3588382/YjmzgMuDHP94XmcrSpw0UA8813/ocr">About</a>
+                <a href="https://avatars.mds.yandex.net/get-images-cbir/3588382/YjmzgMuDHP94XmcrSpw0UA8813/ocr">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Welcome to Online Lessons</h2>
+            <p>Enhance your skills with our online courses.</p>
+        </section>
+        <section>
+            <h2>Popular Courses</h2>
+            <div class="course">
+                <img src="https://fluencycorp.com/wp-content/uploads/2020/10/learn-english.jpeg" alt="Course 1">
+                <div>
+                    <h3>English</h3>
+                    <p>Learn English only with Online Lessons</p>
+                    <p>Price: $29.99</p>
+                    <a href="https://www.youtube.com/watch?v=sKK7LAGWjJE&ab_channel=%D0%90%D0%9D%D0%93%D0%9B%D0%98%D0%99%D0%A1%D0%9A%D0%98%D0%99%D0%AF%D0%97%D0%AB%D0%9A%D0%9F%D0%9E%D0%9F%D0%9B%D0%95%D0%99%D0%9B%D0%98%D0%A1%D0%A2%D0%90%D0%9C" target="_blank"><button>Watch lesson</button></a>
+                </div>
+            </div>
+            <div class="course">
+                <img src="https://klike.net/uploads/posts/2020-05/1589698358_3.jpg" alt="Course 2">
+                <div>
+                    <h3>Russian</h3>
+                    <p>Learn Russian only with Online Lessons</p>
+                    <p>Price: $24.99</p>
+                    <a href="https://www.youtube.com/watch?v=R0YagbmLU8A&t=1s&ab_channel=%D0%9E%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8" target="_blank"><button>Watch lesson</button></a>
+                </div>
+            </div>
+            <div class="course">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFoa4jTOpzq6rGYs_ZifWtsg3B-KeBM_ef1w&usqp=CAU" alt="Course 3">
+                <div>
+                    <h3>Algebra</h3>
+                    <p>Learn algebra only with Online Lessons</p>
+                    <p>Price: $19.99</p>
+                    <a href="https://www.youtube.com/watch?v=wxwsKNhxYhU&list=PLnVYEpTNGNtVt-s8GtCIicnkOPTDmJ_6t&ab_channel=MathandScience" target="_blank"><button>Watch lesson</button></a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>About Us</h2>
+            <p>This site was created by a group of 3 people from class 9A.</p>
+            <p>By: Borzenko Roman, Abaihanov Hyisa, Mushnikov Sergey</p>
+            <h1> <img src="https://avatars.mds.yandex.net/get-images-cbir/1680471/ucpdSz3RhO-CIRRWnT5Tpw7985/ocr" alt="Иконка" style="width: 100px; height: 100px;"></h1>
+        </section>
+    </div>
+    <footer>
+        <p>&copy;Learn lessons only with Online lessons</p>
+    </footer>
+</body>
+</html>
